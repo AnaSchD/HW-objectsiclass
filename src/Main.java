@@ -1,9 +1,15 @@
 public class Main {
 
+
     public static void main(String[] args) {
 
-        Book book = new Book("Say yes to life", "Victor Frankl", 2012);
-        Author book1 = new Author("Viktor", "Frankl");
+        Author author1 = new Author("Viktor", "Frankl");
+        Book book = new Book("Say yes to life",author1, 2012);
+
+        Author author2 = new Author("Mona", "Kasten");
+        Book book1 = new Book("Save you", author2, 2019);
+
+
 
     }
 }

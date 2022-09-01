@@ -10,4 +10,13 @@ public class Author {
 
     }
 
+    public String getNameAuthor() {
+        return nameAuthor;
+    }
+
+    public String getSurnameAuthor() {
+        return surnameAuthor;
+    }
+
+
 }
