@@ -1,5 +1,9 @@
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Book book = new Book("Say yes to life", "Victor Frankl", 2012);
+        Author book1 = new Author("Viktor", "Frankl");
+
     }
 }
