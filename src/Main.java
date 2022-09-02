@@ -3,6 +3,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+
         Author author1 = new Author("Viktor", "Frankl");
         Book book = new Book("Say yes to life", author1, 2012);
 

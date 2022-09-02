@@ -1,9 +1,8 @@
 public class Book {
 
-
-    String nameBook;
-    Author author;
-    int publicationYear;
+    private String nameBook;
+    private Author author;
+    private int publicationYear;
 
     public Book (String nameBook, Author author, int publicationYear) {
         this.nameBook = nameBook;
