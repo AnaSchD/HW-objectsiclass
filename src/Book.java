@@ -41,7 +41,7 @@ public class Book {
 
     @Override
     public int hashCode() {
-        return java.util.Objects.hash(this.nameBook) + java.util.Objects.hash(this.publicationYear) + java.util.Objects.hash(this.author);
+        return java.util.Objects.hash(this.nameBook, this.publicationYear, this.author);
     }
 }
 

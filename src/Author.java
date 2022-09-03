@@ -30,6 +30,6 @@ public class Author {
         }
     }
     public int hashCode() {
-        return java.util.Objects.hash(this.nameAuthor) + java.util.Objects.hash(this.surnameAuthor);
+        return java.util.Objects.hash(this.nameAuthor, this.surnameAuthor);
     }
 }
