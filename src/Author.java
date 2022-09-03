@@ -18,5 +18,18 @@ public class Author {
         return surnameAuthor;
     }
 
+    public String toString() {
+        return " " + nameAuthor + " " + surnameAuthor;
+    }
 
+    public boolean equals(Author author1) {
+        if (nameAuthor.equals(author1.getNameAuthor()) && surnameAuthor.equals(author1.getSurnameAuthor())) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public int hashCode() {
+        return java.util.Objects.hash(this.nameAuthor) + java.util.Objects.hash(this.surnameAuthor);
+    }
 }

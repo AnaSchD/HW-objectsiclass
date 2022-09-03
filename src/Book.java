@@ -26,5 +26,22 @@ public class Book {
        this.publicationYear = publicationYear1;
     }
 
+    @Override
+    public String toString() {
+        return nameBook + author + " " + publicationYear;
+    }
+
+    public boolean equals (Book book) {
+        if (this.nameBook.equals(book.getNameBook()) && this.publicationYear == book.getPublicationYear()) {
+            if (this.author.equals(book.getAuthor())) {
+                return true;
+            }
+        }  return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(this.nameBook) + java.util.Objects.hash(this.publicationYear) + java.util.Objects.hash(this.author);
+    }
 }
 
