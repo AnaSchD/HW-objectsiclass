@@ -24,7 +24,7 @@ public class Main {
 
     }
 
-    public static void addBook(Book[] array, Book book) {
+    private static void addBook(Book[] array, Book book) {
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] == null) {
@@ -37,6 +37,8 @@ public class Main {
 
 
         }
+
+
 
 
     }
