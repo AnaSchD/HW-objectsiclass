@@ -11,42 +11,35 @@ public class Main {
         Author author2 = new Author("Mona", "Kasten");
         Book book1 = new Book("Save you", author2, 2019);
 
-        System.out.println(book2.getPublicationYear());
+       // System.out.println(book2.getPublicationYear());
 
         /* book2.setPublicationYear(2015);
          System.out.println("book.getPublicationYear() = " + book2.getPublicationYear());*/
 
-        Book[] books = new Book[5];
-        books[0] = book2;
-        books[1] = book1;
-        addBook(books, book1);
-        addBook(books, book1);
-        addBook(books, book1);
-
-        System.out.println(book2.equals(book3));
+//        Book[] books = new Book[5];
+//        books[0] = book2;
+//        books[1] = book1;
 
 
-
-    }
-
-    private static void addBook(Book[] array, Book book) {
-
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == null) {
-                array [i] = book;
-                return;
-            }
-            if (array[array.length - 1] != null) {
-                throw new RuntimeException("Массив полный");
-            }
+        Library nasti = new Library(7);
+        nasti.addBook(book1);
+        nasti.addBook(book1);
+        nasti.addBook(book2);
+        nasti.addBook(book1);
+        nasti.addBook(book1);
 
 
+
+        nasti.informationBook("Say yes to life");
+        nasti.changeYear("Say yes to life", 2022);
+        System.out.println();
+        nasti.informationBook("Say yes to life");
         }
 
 
 
 
-    }
 }
+
 
 

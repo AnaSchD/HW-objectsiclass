@@ -22,13 +22,13 @@ public class Book {
         return publicationYear;
     }
 
-    public void setPublicationYear (int publicationYear1) {
-       this.publicationYear = publicationYear1;
+    public void setPublicationYear (int newPublicationYear) {
+       this.publicationYear = newPublicationYear;
     }
 
     @Override
     public String toString() {
-        return nameBook + author + " " + publicationYear;
+        return "The " + nameBook + " by " + author + " was published in " + publicationYear;
     }
 
     public boolean equals (Book book) {
